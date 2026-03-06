@@ -11,7 +11,7 @@ The 'Frontend' of the CLI (Command Line Interface): a text-based user interface 
 Keeping these separate prevents main.py from becoming a file that does too many things at once!
 
 RATIONALE:
-By separating the CLI logic from main.py, we achieve 'Separation of Concerns.'
+By separating the CLI logic from main.py, we achieve separation of concerns.
 This keeps the main execution loop clean and ensures that the user interface
 logic is separated from the core Portfolio data structures. This makes the
 code easier to test and allows for future UI changes (like adding a GUI)
