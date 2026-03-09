@@ -9,7 +9,7 @@ class Port(pd.DataFrame):
     """
         Some insight behind the thinking of the following code:
         Subclassing pd.DataFrame is notoriously finicky.
-        Pandas operations like .iloc[], .copy(), concat, copy, slicing a column, or .drop() don't just modify
+        Pandas operations like .iloc[], .copy(), concat, slicing a column, or .drop() don't just modify
         the existing object; they often CREATE A NEW ONE!!!
         This means, if you haven't told Pandas how to "rebuild" the specific 'Port class', it
         defaults back to a standard pd.DataFrame, and the custom functionality is lost.
