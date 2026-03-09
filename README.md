@@ -5,5 +5,14 @@ An interactive stock portfolio manager built with a custom Pandas-inherited arch
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ### PROJECT ORDER:
 
-Here's the order this project's folders should be ran and viewed in:
-- 
+Here's the order this project's folders should be viewed in:
+- `Python Files` /
+    -  `port.py`
+    -  `interface.py`
+    -  `main.py` (run this file)
+    
+-  `Example Portfolio`
+    - `test.csv`
+    - `test_portfolio.png` 
+ 
+  
