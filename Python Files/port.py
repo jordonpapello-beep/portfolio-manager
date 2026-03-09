@@ -288,7 +288,9 @@ class Port(pd.DataFrame):
     def refresh_prices(self):
         """
         • The purpose of this function is to update all 'Close' prices using the Ticker index of a port object by
-          re-downloading the close information for an asset from Yahoo Finance.
+          re-downloading the close information for an asset from Yahoo Finance. This function is ran in the interface
+          after a portfolio is loaded from its relative file path, and after a buy or sell is performed on the 
+          portfolio.
         """
 
         if self.empty:
