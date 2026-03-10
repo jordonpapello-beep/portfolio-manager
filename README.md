@@ -17,8 +17,8 @@ Here's the order this project's folders should be viewed in:
     -  `main.py` (run this file)
     
 -  `Example Portfolio`
-    -  `portfolio_data.csv`
-    -  `portfolio_image.png`
+    -  `Test.csv`
+    -  `Test_Portfolio.png`
 
  - `Portfolio Operations` /
    -  `Create.png`
