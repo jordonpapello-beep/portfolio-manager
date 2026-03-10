@@ -25,6 +25,7 @@ Here's the order this project's folders should be viewed in:
    -  `Buy.png`
    -  `Sell.png`
    -  `View.png`
+   -  `Refresh.png`
  
  --------------------------------------------------------------------------------------------------------------------------------------------------
  ### FILE DESCRIPTIONS:
