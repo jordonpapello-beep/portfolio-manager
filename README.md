@@ -6,7 +6,7 @@
 
 - The metrics that are tracked and/or calculated for each asset in a portfolio the user creates are: shares owned, actual money invested, latest close price for the asset, current market value of the shares owned, average price the user paid for the shares they own, current unrealized profit/loss of the asset in dollars, current unrealized profit/loss of the asset expressed as a percentage increase or decrease, and finally the portfolio allocation percentage which represents how much of the portfolio that asset makes up. Furthermore, Port objects have a few attributes/metadata that is kept track of in order to identify and evaluate a portfolio, which are: the portfolio's name, the date and time it was created, the date and time the portfolio was updated (assets bought, sold, or refreshed), the realized profit loss of the portfolio (P/L of any assets sold), and finally the current total profit/loss of the portfolio (realized P/L + sum(all assets' unrealized P/L)). All of these will be visible in the images of an example portfolio that will be supplied in this repository.
 
-- For the best understanding of the program and it's functionality, feel free to run the code on your own and test out making your own portfolios!
+- For the best understanding of the program and it's functionality, and to see all of the options available when buying and selling assets, feel free to run the code on your own and test out making your own portfolios!
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 ### PROJECT ORDER:
 
@@ -22,9 +22,9 @@ Here's the order this project's folders should be viewed in:
 
  - `Portfolio Operations` /
    -  `Create.png`
-   -  `View.png`
    -  `Buy.png`
    -  `Sell.png`
+   -  `View.png`
  
  --------------------------------------------------------------------------------------------------------------------------------------------------
  ### FILE DESCRIPTIONS:
@@ -44,9 +44,9 @@ Below is a description of each file, and its purpose. For a more specific descri
 
 - **This script handles all the user interaction**: user input collection and error checking. It is the 'frontend' of this project, the 'Command Line Interface (CLI)': **a text-based user interface used to interact with software.** All of the functions defined in this script are designed to collect user input, handle any errors in that input, and to guide the user to make a choice to perform an action on a portfolio or exit the program. The only function that does not fall into this category is `ticker_exists`, which is a simple helper function designed to validate that an assets ticker abbreviation exists on Yahoo Finance.
     - `view_input`: can be thought of as the **main menu** where all portfolios can be accessed and selected for display in the console.
-    - `create_input`: for when the user wants to create a new portfolio.
-    - `buy_input`: for when the user wants to buy a new asset or more of the same asset for a specific portfolio.
-    - `sell_input`: for when the user wants to sell all or some of an asset from a specific portfolio.
+    - `create_input`: for when the user wants to create a new portfolio. User can name their portfolio whatever they want.
+    - `buy_input`: for when the user wants to buy a new asset or more of the same asset for a specific portfolio. The user can choose to buy an asset by shares or by dollar amount.
+    - `sell_input`: for when the user wants to sell all or some of an asset from a specific portfolio. The user can choose to buy an asset by shares or by dollar amount, or choose to sell all of the asset.
 
 ### 3.) `main.py`:
 
