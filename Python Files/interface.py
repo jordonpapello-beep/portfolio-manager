@@ -26,7 +26,7 @@ import sys # for sys.exit()
 def ticker_exists(ticker):
     """
     Simple boolean function used to see check if an inputted Ticker abbreviation is authentic or not (can be found
-    on and has data from Yahoo Finance).
+    on and has data from Yahoo Finance). Defined in this file because it is specifically used for validating user input.
 
     :param ticker: (str) the abbreviation of the stock / ETF.
     :return: returns boolean. True if the ticker returns at least 1 row of data, meaning it exists.
