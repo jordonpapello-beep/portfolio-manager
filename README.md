@@ -28,11 +28,11 @@ Here's the order this project's folders should be viewed in:
  --------------------------------------------------------------------------------------------------------------------------------------------------
  ### IN DEPTH DESCRIPTION:
 
-Below is a description of each file, and its purpose. For a more specific description of individual lines of code, please view the Python files themselves. The files are **heavily commented** to help aid in the understanding of the code.
+Below is a description of each file, and its purpose. For a more specific description of individual lines of code and/or functions, please view the Python files themselves. The files are **heavily commented** to help aid in the understanding of the code.
 
 ### 1. `port.py`:
 
-This script is a Class that defines...
+This file is where the 'Port' Class resides, which means it's where the portfolio objects are defined, and the functions that act on them are located (mutators and disk methods). This file can be thought of as the engine behind this project, as it does all of the required calculations needed to compute a portfolio's metrics, and as it does all the data scraping from Yahoo Finance. Furthermore, this class subclasses Pandas to take advantage of Pandas' Data Frame functionality, which is perfect for creating, displaying, and altering a table of assets (i.e. a portfolio).  
 
 ### 2. `interface.py`:
 
