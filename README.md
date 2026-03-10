@@ -44,10 +44,10 @@ Below is a description of each file, and its purpose. For a more specific descri
 ### 2.) `interface.py`:
 
 - **This script handles all the user interaction**: user input collection and error checking. It is the 'frontend' of this project, the 'Command Line Interface (CLI)': **a text-based user interface used to interact with software.** All of the functions defined in this script are designed to collect user input, handle any errors in that input, and to guide the user to make a choice to perform an action on a portfolio or exit the program. The only function that does not fall into this category is `ticker_exists`, which is a simple helper function designed to validate that an assets ticker abbreviation exists on Yahoo Finance.
-    - `view_input`: can be thought of as the **main menu** where all portfolios can be accessed and selected for display in the console.
-    - `create_input`: for when the user wants to create a new portfolio. User can name their portfolio whatever they want.
-    - `buy_input`: for when the user wants to buy a new asset or more of the same asset for a specific portfolio. The user can choose to buy an asset by shares or by dollar amount.
-    - `sell_input`: for when the user wants to sell all or some of an asset from a specific portfolio. The user can choose to buy an asset by shares or by dollar amount, or choose to sell all of the asset.
+    - **`view_input`:** can be thought of as the **main menu** where all portfolios can be accessed and selected for display in the console.
+    - **`create_input`:** for when the user wants to create a new portfolio. User can name their portfolio whatever they want.
+    - **`buy_input`:** for when the user wants to buy a new asset or more of the same asset for a specific portfolio. The user can choose to buy an asset by shares or by dollar amount.
+    - **`sell_input`:** for when the user wants to sell all or some of an asset from a specific portfolio. The user can choose to buy an asset by shares or by dollar amount, or choose to sell all of the asset.
 
 ### 3.) `main.py`:
 
