@@ -72,6 +72,8 @@ def view_input():
                                                  f"{chosen_portfolio_name}.csv",
                                                  name={chosen_portfolio_name.lower().capitalize()}) # Aesthetic choice
     chosen_portfolio_object.refresh_prices() # refresh the CSV before displaying it
+    chosen_portfolio_object.save_to_csv(f"Portfolios/{chosen_portfolio_name}/"
+                                        f"{chosen_portfolio_name}.csv") # save it so 'last_updated' updates
     print(chosen_portfolio_object) # display the portfolio in the console
 
     # User Decision, what do they want to do now that they have selected this portfolio:
@@ -92,6 +94,7 @@ def view_input():
             sys.exit() # Stops the program immediately
         case 'refresh':
             chosen_portfolio_object.refresh_prices() # refresh the data
+            chosen_portfolio_object.save_to_csv(f"Portfolios/{chosen_portfolio_name}/{chosen_portfolio_name}.csv")
             print(chosen_portfolio_object) # re-print the data
         case 'view':
             view_input()
@@ -263,7 +266,7 @@ def buy_input(portfolio_name):
             # Actually buying the asset:
             portfolio.buy(ticker, shares=amountBought) # buy it
             portfolio.refresh_prices() # refresh all close data
-            portfolio.save_to_csv(f"Portfolios/{portfolio_name}/{portfolio_name}.csv")# save it
+            portfolio.save_to_csv(f"Portfolios/{portfolio_name}/{portfolio_name}.csv") # save it
             print(portfolio) # view purchase
 
             # Option to repeat the 'buy_input()' function:
