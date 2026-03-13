@@ -488,7 +488,7 @@ def sell_input(portfolio_name):
                 try:
                     amountSold = float(
                         input(f"\nEnter the number of dollars of {ticker} you would you like to sell "
-                              f"out of your ${owned_dollars:,.2f} in market value: "))
+                              f"out of your ${owned_dollars:,.2f} in market value: $"))
                 except ValueError:
                     print(f"\n{'*' * 14} ERROR! YOU DIDN'T ENTER A NUMERIC VALUE {'*' * 14}")
                     continue  # back to the beginning of this while loop
