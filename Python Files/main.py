@@ -17,7 +17,7 @@ def main():
 
         # Input Error Checking:
         while choice not in ['create', 'view', 'exit']:
-            choice = input("\nINVALID INPUT! INPUT OPTIONS ARE 'Create', 'View', or 'Exit': ")
+            choice = input("\nINVALID INPUT! INPUT OPTIONS ARE 'Create', 'View', or 'Exit': ").lower()
 
         # User input menu selection match case ladder:
         match choice:
